@@ -3,9 +3,14 @@
         "caption": "Selected",
         "children":
         [
-            { "id": "bin_inv", "command": "selection_binary_inversion", "$caption": "Binary Inversion" },
+            { "id": "bin_inv", "command": "selected_binary_inversion", "$caption": "Binary Inversion" },
             { "id": "rol", "command": "selection_rotary_shift", "caption": "Left Rotary Shift", "args": { "direction": -1 } },
             { "id": "ror", "command": "selection_rotary_shift", "caption": "Right Rotary Shift", "args": { "direction": 1 } }
         ]
+    },
+    {
+      "id": "min_cpp",
+      "command": "minify_cpp",
+      "caption": "Minify C++ Code"
     }
 ]

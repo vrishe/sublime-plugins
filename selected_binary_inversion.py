@@ -14,7 +14,7 @@ def build_textSet(view):
     return result
 
 textSetCompletionSource = CompletionSource()
-class SelectionBinaryInversionViewEventListener(sublime_plugin.EventListener):
+class SelectedBinaryInversionViewEventListener(sublime_plugin.EventListener):
     def on_activated_async(self, view):
         textSetCompletionSource.reset()
         textSetCompletionSource.set_result(build_textSet(view))
@@ -24,7 +24,7 @@ class SelectionBinaryInversionViewEventListener(sublime_plugin.EventListener):
         textSetCompletionSource.set_result(build_textSet(view))
 
 
-class SelectionBinaryInversionCommand(sublime_plugin.TextCommand):
+class SelectedBinaryInversionCommand(sublime_plugin.TextCommand):
     def __init__(self, args):
         sublime_plugin.TextCommand.__init__(self, args)
         self.menu = None

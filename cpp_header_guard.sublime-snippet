@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+#pragma once
+
+#ifndef ${1:_${TM_FILENAME/\W/_/g}_}
+#define ${1}
+
+#endif // ${1}
+]]></content>
+	<tabTrigger>hguard</tabTrigger>
+	<scope>source.c++</scope>
+</snippet>
