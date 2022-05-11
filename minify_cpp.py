@@ -95,7 +95,7 @@ class MinifyCppCommand(sublime_plugin.TextCommand):
       if is_sl_comment and cur.cls & sublime.CLASS_LINE_END:
         is_sl_comment = False
         append_segment(comment_start, cur.i - comment_start + 1)
-      if is_ml_comment and prev.cls & sublime.CLASS_PUNCTUATION_START and cur.cls == 0\
+      if is_ml_comment and cur.cls == 0\
           and prev.char == '*' and cur.char == '/':
         is_ml_comment = False
         append_segment(comment_start, cur.i - comment_start + 1)
