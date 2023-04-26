@@ -9,8 +9,13 @@
         ]
     },
     {
-      "id": "min_cpp",
+      "id": "minify_cpp",
       "command": "minify_cpp",
       "caption": "Minify C++ Code"
+    },
+    {
+      "id": "readonly",
+      "command": "readonly_disable",
+      "caption": "Disable Read-Only"
     }
 ]

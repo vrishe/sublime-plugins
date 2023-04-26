@@ -117,5 +117,4 @@ class MinifyCppCommand(sublime_plugin.TextCommand):
 
   def is_visible(self):
     syntax = self.view.settings().get('syntax')
-    print(syntax)
     return "c++" in syntax.casefold()
